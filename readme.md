@@ -1,6 +1,6 @@
 <!-- ENCABEZADO TITULO -->
 # Proyecto: War of Space
-![mi proyecto](img_juego\menu.png)
+![mi proyecto](menu.png)
 
 
 ## Creador:
@@ -27,7 +27,7 @@ El juego contiene:
 
 ## Instrucciones
 En esta ventana indico las instrucciones para poder utilizar la nave principal.
-![mi proyecto](img_juego\instrucciones.png)
+![mi proyecto](instrucciones.png)
 
 Fragmento de codigo:
 ```python
@@ -60,7 +60,7 @@ def pantalla_instrucciones(ventana):
 
 ## Registrarse
 Luego antes de empezar a jugar de forma obligatoria antes el usuario debe registrarse ingresando su nombre, en caso que se ingrese una cadena vacia el juego le indicara un mensaje de aviso para que ingrese por lo menos una letra.
-![mi proyecto](img_juego\registro.png)
+![mi proyecto](registro.png)
 
 Fragmento de codigo donde valido el dato ingresado:
 ```python
@@ -100,9 +100,9 @@ Fragmento de codigo donde valido el dato ingresado:
 
 ## Nivel 1
 En el nivel 1 se debe vencer a las naves que se dividen en 2 etapas. La primera etapa es hasta llegar a 9 puntos y pasa a la segunda etapa donde las naves enemigas tiene mayor velocidad de disparo. Se debe alcanzar los 18 puntos para poder pasar al siguiente nivel. El elemento que participara en este nivel es la pocion que le otorgara a la nave en caso de absorberse una vida EXTRA en caso de no contener las 3
-![mi proyecto](img_juego\naves_enemigas.png)
+![mi proyecto](naves_enemigas.png)
 Etapa 2:
-![mi proyecto](img_juego\naves_enemigas_etapa2.png)
+![mi proyecto](naves_enemigas_etapa2.png)
 
 Fragmento de codigo donde contiene las colisiones entre las naves enemigas para que no se superpongan:
 ```python
@@ -136,7 +136,7 @@ for otro_enemigo in lista_naves_enemigas:
 
 ## Nivel 2
 En el nivel 2 se debera eliminar los asteroides hasta conseguir 35 puntos, en caso que un asteroide colisione con la nave esta misma perdera 1 vida y 5 puntos. El elemento que participara en este nivel es la velocidad, en caso que la nave consiga colisionar con este mismo le otorgara 8 segundos de velocidad de movimiento extra.
-![mi proyecto](img_juego\asteroides.png)
+![mi proyecto](asteroides.png)
 
 Fragmento de codigo donde contiene las colisiones entre los disparos de la nave principal y los asteroides:
 ```python
@@ -166,7 +166,7 @@ for asteroide in lista_asteroides:
 
 ## Nivel 3
 En el nivel 3 se debera derrotar al boss final el cual contara con 11 vidas. Este mismo tendra movimiento al azar por la ventana y disparara en algunos momentos mas rapidos. El elemento que participara en este nivel es el de relentizar la nave principal. En vez de ser un beneficio seria todo lo contrario. 
-![mi proyecto](img_juego\boss.png)
+![mi proyecto](boss.png)
 
 Fragmento de codigo donde contiene los movimiento de la nave enemiga:
 ```python
@@ -227,7 +227,7 @@ for evento in lista_eventos:
 
 ## Derrota
 La ventana de derrota siempre se ejecutara cuando la nave principal tenga 0 vidas. Esta ventana permite volver a jugar sin guardar el score o guardar el score y salir del juego.
-![mi proyecto](img_juego\derrota.png)
+![mi proyecto](derrota.png)
 
 Funcion:
 ```python
@@ -282,7 +282,7 @@ def pantalla_derrota(ventana,nave_principal):
 
 ## Victoria
 La ventana victoria se ejecutara cuando se vence al boss final.
-![mi proyecto](img_juego\victoria.png)
+![mi proyecto](victoria.png)
 
 Funcion:
 ```python
@@ -326,7 +326,7 @@ def pantalla_victoria(ventana,nave_principal):
 
 ## Ranking de puntuaciones
 La ventana se ejecutara cuando gane o cuando pierda las 3 vidas. Esta funcion se conecta con una base de datos local donde se almacena cada jugador con su nombre y score. Y muestro los 10 mayores puntajes de mayor a menor.
-![mi proyecto](img_juego\tabla_de_record.png)
+![mi proyecto](tabla_de_record.png)
 
 Funcion:
 ```python
